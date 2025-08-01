@@ -1,10 +1,12 @@
-# tailwind-v4-darkmode-repro
+# Tailwind v4 Dark Mode Reproduction
 
-🎨 Minimal reproduction repo showing Tailwind CSS v4 dark mode issue where two CSS versions are loaded in dev mode.
+This is a minimal reproduction of issue [#18539](https://github.com/tailwindlabs/tailwindcss/issues/18539) from Tailwind CSS,  
+where dark mode conflicts occur because Tailwind v4 loads two CSS versions in dev mode.
 
-## Steps to run
+## Steps to reproduce
+
+1. Clone the repo:
 
 ```bash
-npm install
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-npm run dev
+git clone https://github.com/sanchitkhthpalia/tailwind-v4-darkmode-repro.git
+cd tailwind-v4-darkmode-repro
